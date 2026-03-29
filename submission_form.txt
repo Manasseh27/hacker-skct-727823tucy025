@@ -1,0 +1,48 @@
+========================================================
+  HACKER PROJECT — SUBMISSION FORM
+  SKCT Cybersecurity Lab 2025
+========================================================
+
+Name              : Manasseh M
+Roll Number       : 727823TUCY025
+Project Name      : Google Dorking Automation
+Project Category  : Offensive Security / OSINT (Open-Source Intelligence)
+
+GitHub Repository : https://github.com/Manasseh-M/hacker-skct-727823tucy025
+Total Commits     : 7 (minimum required — spread across 3 different days)
+
+Tools Used        :
+  - Python 3.11 (primary language)
+  - requests (HTTP result fetching)
+  - BeautifulSoup4 (HTML parsing / URL extraction)
+  - re (regex-based sensitive pattern detection)
+  - pandas (result aggregation in analyze_results.py)
+  - Kali Linux 2024.1 (lab OS — VirtualBox VM)
+  - Metasploitable2 (internal vulnerable target)
+  - Google Search (dork query execution)
+
+Lab Environment   :
+  - Hypervisor   : VirtualBox 7.x
+  - Attacker VM  : Kali Linux 2024.1
+  - Target VM    : Metasploitable2
+  - External targets (demo/intentionally vulnerable sites):
+      testphp.vulnweb.com (Acunetix DVWA)
+      zero.webappsecurity.com
+      demo.testfire.net (IBM Altoro Mutual)
+
+Pipeline Details  :
+  - Pipeline YAML : pipeline_727823tucy025.yml
+  - Stage 1       : setup_lab.py  — installs dependencies, creates output dirs
+  - Stage 2       : run_tool.py   — executes dork queries, saves result .txt files
+  - Stage 3       : analyze_results.py — aggregates findings, prints risk summary
+
+MLflow / Lab Run  : N/A (pipeline executed directly via YAML on Kali Linux)
+
+One-Line Summary  :
+  Automates Google dork queries against a target domain to detect publicly
+  indexed sensitive files, admin panels, and credential leaks using regex
+  pattern matching, with results saved to timestamped log files.
+
+========================================================
+  Submission ZIP  : 727823TUCY025_HackerProject.zip
+========================================================
