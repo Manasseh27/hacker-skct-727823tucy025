@@ -1,0 +1,11 @@
+project_name: GoogleDorking_727823tucy025
+
+stages:
+  - name: setup
+    script: python3 code/setup_lab.py
+
+  - name: run
+    script: python3 code/run_tool.py
+
+  - name: analyze
+    script: python3 code/analyze_results.py
