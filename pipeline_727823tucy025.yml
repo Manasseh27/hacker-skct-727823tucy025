@@ -9,3 +9,4 @@ stages:
 
   - name: analyze
     script: python3 code/analyze_results.py
+pipeline update
